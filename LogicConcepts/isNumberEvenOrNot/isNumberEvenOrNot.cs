@@ -1,22 +1,13 @@
 ﻿
 using Shared;
 
-var numberString = string.Empty;
+var response = string.Empty;
 
 do
 {
-    Console.Write("Ingrese un número entero o la palabra 'salir' para terminar el programa: ");
-    numberString = Console.ReadLine();
-
-    if (numberString!.ToLower() == "salir")
+    try
     {
-        continue;
-    }
-
-    int number = ConsoleExtensions.getInt("");
-
-    if (int.TryParse(numberString, out number))
-    {
+        int number = ConsoleExtensions.getInt("Ingrese un número entero: ");
         if (number % 2 == 0)
         {
             Console.WriteLine($"El número {number}, es entero.");
@@ -25,12 +16,14 @@ do
         {
             Console.WriteLine($"El número {number}, es impar.");
         }
-    }else
+    }
+    catch (Exception ex)
     {
-        Console.WriteLine($"El valor ingresado: '{numberString}', no es un número entero.");
+        Console.WriteLine(ex.Message);
     }
 
-    Console.WriteLine(string.Empty);
-
-} while (numberString!.ToLower() != "salir");
+    Console.Write("Desea continuar [S]i o [N]o? ");
+    response = Console.ReadLine();
+    
+} while (response!.ToLower() == "S");
 Console.WriteLine("Game Over!");

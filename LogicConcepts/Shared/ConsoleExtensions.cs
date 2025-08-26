@@ -14,11 +14,11 @@ namespace Shared
             {
                 return result;
             }
-            else
-            {
-                return 0;
-            }
+
+            throw new Exception("El valor ingresado no es un número entero.");
 
         }
+
+
     }
 }
