@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01", "01", "{02EA681E-C7D8-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isNumberEvenOrNot", "isNumberEvenOrNot\isNumberEvenOrNot.csproj", "{F58765DC-C09A-4176-92BE-8B82DD22B496}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{6FE647F4-13C6-4F51-930C-5F4C4E4388CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{02D2C2BB-E158-498A-A984-B0D7FE53BC30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{F58765DC-C09A-4176-92BE-8B82DD22B496}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F58765DC-C09A-4176-92BE-8B82DD22B496}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F58765DC-C09A-4176-92BE-8B82DD22B496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02D2C2BB-E158-498A-A984-B0D7FE53BC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D2C2BB-E158-498A-A984-B0D7FE53BC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D2C2BB-E158-498A-A984-B0D7FE53BC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D2C2BB-E158-498A-A984-B0D7FE53BC30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F58765DC-C09A-4176-92BE-8B82DD22B496} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{02D2C2BB-E158-498A-A984-B0D7FE53BC30} = {6FE647F4-13C6-4F51-930C-5F4C4E4388CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6AFCCB0-44F0-4A58-A72B-6C625158BF57}

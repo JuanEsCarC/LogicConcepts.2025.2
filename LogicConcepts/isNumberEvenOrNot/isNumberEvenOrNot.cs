@@ -1,4 +1,6 @@
 ﻿
+using Shared;
+
 var numberString = string.Empty;
 
 do
@@ -11,7 +13,8 @@ do
         continue;
     }
 
-    int number = 0;
+    int number = ConsoleExtensions.getInt("");
+
     if (int.TryParse(numberString, out number))
     {
         if (number % 2 == 0)
